@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# kill spotify and say something at a time understood by at
+
+echo "kill -9 `ps -A|grep -i macos/spotify$|awk '{print $1}'`"|at $1
+echo "say 'get ready for meeting'"|at $1
+atq
