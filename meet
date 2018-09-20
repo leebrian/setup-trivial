@@ -3,4 +3,5 @@
 
 echo "kill -9 `ps -A|grep -i macos/spotify$|awk '{print $1}'`"|at $1
 echo "say 'get ready for meeting'"|at $1
+echo "say -v Moira 'go meet, for real'"|at $(($1+5))
 atq
